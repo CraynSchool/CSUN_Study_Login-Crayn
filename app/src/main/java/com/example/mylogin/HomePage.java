@@ -1,5 +1,6 @@
 package com.example.mylogin;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.example.mylogin.databinding.ActivityHomePageBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -25,10 +27,12 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
     Toolbar toolbar;
     FragmentManager fragmentManager;
     BottomNavigationView bottomNavigationView;
+    //public Button CreateGroupButton;
     HomeFragment homeFragment= new HomeFragment();
     SettingsFragment settingsFragment = new SettingsFragment();
     ProfileFragment profileFragment = new ProfileFragment();
     MessageFragment messageFragment = new MessageFragment();
+    //CreateGroupFragment createGroupFragment = new CreateGroupFragment();
 
 
 
@@ -36,6 +40,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //CreateGroupButton= (Button) findViewById(R.id.buttonNewGroup);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         toolbar = findViewById(R.id.toolbar);
@@ -55,17 +60,16 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {//bottom nav menu
                 int itemId = item.getItemId();
-                if(itemId==R.id.home) {
+                if (itemId == R.id.home) {
                     openFragment(new HomeFragment());
                     return true;
-                } else if  (itemId==R.id.search){
+                } else if (itemId == R.id.search) {
                     openFragment(new SearchFragment());
                     return true;
-                }else if  (itemId==R.id.profile) {
+                } else if (itemId == R.id.profile) {
                     openFragment(new ProfileFragment());
                     return true;
-                }
-
+                }else
                 return false;
             }
         });
@@ -79,6 +83,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         
 
     }
+
 
     @Override
     //navigation drawer
