@@ -1,5 +1,6 @@
 package com.example.mylogin;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SearchView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +20,11 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class SearchFragment extends Fragment {
+
+    SearchView searchView;
+    ListView myListView;
+    ArrayList<String> arrayList;
+    ArrayAdapter<String> adapter;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,10 +66,42 @@ public class SearchFragment extends Fragment {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        View view = inflater.inflate(R.layout.fragment_search, container, false);
+        searchView = view.findViewById(R.id.searchView);
+        myListView = view.findViewById(R.id.listView);
+
+        arrayList = new ArrayList<>();
+        arrayList.add("Business 104");
+        arrayList.add("Civil Engineering 101");
+        arrayList.add("Computer Science 310");
+        arrayList.add("History 380");
+        arrayList.add("Math 482");
+        arrayList.add("Nursing 306");
+        arrayList.add("Physics 220A");
+
+        adapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, arrayList);
+
+        myListView.setAdapter(adapter);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                adapter.getFilter().filter(s);
+                return false;
+            }
+        });
+
+        return view;
+
     }
 }
