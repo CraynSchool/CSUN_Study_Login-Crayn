@@ -35,18 +35,16 @@ public class HomeFragment extends Fragment {
                 transaction.commit();
             }
         });
+
         createGroupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Replace the current fragment with MathGroupFragment
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, new CreateGroupFragment());
                 //transaction.addToBackStack(null); // Optional, for back navigation
                 transaction.commit();
             }
         });
-
-
 
         historyFragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
