@@ -1,13 +1,16 @@
 package com.example.mylogin;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -98,6 +101,28 @@ public class SearchFragment extends Fragment {
             public boolean onQueryTextChange(String s) {
                 adapter.getFilter().filter(s);
                 return false;
+            }
+        });
+
+        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                String name = adapterView.getItemAtPosition(i).toString();
+
+                if(name.equals("History 380"))
+                {
+                    FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                    transaction.replace(R.id.fragment_container, new HistoryGroupFragment());
+                    transaction.commit();
+                }
+                if(name.equals("Math 482"))
+                {
+                    FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                    transaction.replace(R.id.fragment_container, new MathGroupFragment());
+                    transaction.commit();
+                }
             }
         });
 
