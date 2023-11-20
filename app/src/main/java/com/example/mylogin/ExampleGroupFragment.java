@@ -13,12 +13,12 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 
-public class HistoryGroupFragment extends Fragment {
+public class ExampleGroupFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_history_group,container,false);
+        View view=inflater.inflate(R.layout.fragment_example_group,container,false);
 
         ImageButton user1FragmentButton = view.findViewById(R.id.userButton1);
         ImageButton user2FragmentButton = view.findViewById(R.id.userButton2);
@@ -69,7 +69,6 @@ public class HistoryGroupFragment extends Fragment {
                 transaction.commit();
             }
         });
-
         messageFragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -89,6 +88,7 @@ public class HistoryGroupFragment extends Fragment {
                 transaction.commit();
             }
         });
+
 
         return view;
     }

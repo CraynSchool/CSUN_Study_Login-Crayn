@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/my_primary"
     tools:context=".CreateGroupFragment">
 
     <LinearLayout
@@ -15,7 +16,7 @@
         android:id="@+id/linearLayout2">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textPrompts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearLayout2"
@@ -25,7 +26,7 @@
             android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/nameInput"
+            android:id="@+id/nameClassName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -34,7 +35,7 @@
             android:textColorHint="@color/white"/>
 
         <EditText
-            android:id="@+id/emailInput"
+            android:id="@+id/emailInputProfessor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -43,7 +44,7 @@
             android:textColorHint="@color/white"/>
 
         <EditText
-            android:id="@+id/favoriteNumberInput"
+            android:id="@+id/favoriteNumberInputTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearLayout2"

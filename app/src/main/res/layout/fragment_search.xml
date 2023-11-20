@@ -6,7 +6,6 @@
     android:background="@color/white"
     tools:context=".SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
