@@ -22,7 +22,11 @@ public class MathGroupFragment extends Fragment {
 
         ImageButton user1FragmentButton = view.findViewById(R.id.userButton1);
         ImageButton user2FragmentButton = view.findViewById(R.id.userButton2);
+        ImageButton user3FragmentButton = view.findViewById(R.id.userButton3);
+        ImageButton user4FragmentButton = view.findViewById(R.id.userButton4);
+        ImageButton user5FragmentButton = view.findViewById(R.id.userButton5);
         ImageButton messageFragmentButton = view.findViewById(R.id.messageButton);
+        ImageButton meetingFragmentButton = view.findViewById(R.id.meetingsButton);
 
         user1FragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,16 +42,48 @@ public class MathGroupFragment extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, new ProfileFragment());
-                //transaction.addToBackStack(null); // Optional, for back navigation
                 transaction.commit();
             }
         });
-
+        user3FragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new ProfileFragment());
+                transaction.commit();
+            }
+        });
+        user4FragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new ProfileFragment());
+                transaction.commit();
+            }
+        });
+        user5FragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new ProfileFragment());
+                transaction.commit();
+            }
+        });
         messageFragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, new MessageFragment());
+                //transaction.addToBackStack(null); // Optional, for back navigation
+                transaction.commit();
+            }
+        });
+
+        meetingFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new MeetingFragment());
                 //transaction.addToBackStack(null); // Optional, for back navigation
                 transaction.commit();
             }

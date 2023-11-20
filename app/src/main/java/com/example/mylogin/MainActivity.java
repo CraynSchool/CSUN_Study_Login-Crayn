@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.add(R.id.fragment_container,new MathGroupFragment());
         fragmentTransaction.add(R.id.fragment_container,new HistoryGroupFragment());
         fragmentTransaction.add(R.id.fragment_container,new ProfileFragment());
+        fragmentTransaction.add(R.id.fragment_container,new ExampleGroupFragment());
+        fragmentTransaction.add(R.id.fragment_container,new MeetingFragment());
         //fragmentTransaction.commit();
     }
 }

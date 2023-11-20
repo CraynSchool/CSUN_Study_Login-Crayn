@@ -23,6 +23,10 @@ public class HomeFragment extends Fragment {
 
         ImageButton mathFragmentButton = view.findViewById(R.id.mathButton);
         ImageButton historyFragmentButton = view.findViewById(R.id.historyButton);
+        ImageButton example3FragmentButton = view.findViewById(R.id.imageButton3);
+        ImageButton example4FragmentButton = view.findViewById(R.id.imageButton4);
+        ImageButton example5FragmentButton = view.findViewById(R.id.imageButton5);
+        ImageButton example6FragmentButton = view.findViewById(R.id.imageButton6);
         Button createGroupButton= view.findViewById(R.id.buttonNewGroup);
 
         mathFragmentButton.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +56,47 @@ public class HomeFragment extends Fragment {
                 // Replace the current fragment with HistoryGroupFragment
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, new HistoryGroupFragment());
+                //transaction.addToBackStack(null); // Optional, for back navigation
+                transaction.commit();
+            }
+        });
+
+        example3FragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Replace the current fragment with MathGroupFragment
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new ExampleGroupFragment());
+                //transaction.addToBackStack(null); // Optional, for back navigation
+                transaction.commit();
+            }
+        });
+        example4FragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Replace the current fragment with MathGroupFragment
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new ExampleGroupFragment());
+                //transaction.addToBackStack(null); // Optional, for back navigation
+                transaction.commit();
+            }
+        });
+        example5FragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Replace the current fragment with MathGroupFragment
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new ExampleGroupFragment());
+                //transaction.addToBackStack(null); // Optional, for back navigation
+                transaction.commit();
+            }
+        });
+        example6FragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Replace the current fragment with MathGroupFragment
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, new ExampleGroupFragment());
                 //transaction.addToBackStack(null); // Optional, for back navigation
                 transaction.commit();
             }

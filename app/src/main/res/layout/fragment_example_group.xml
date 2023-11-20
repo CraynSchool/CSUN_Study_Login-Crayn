@@ -26,12 +26,12 @@
             android:padding="28dp">
 
             <ImageView
-                android:id="@+id/imageMath123"
+                android:id="@+id/imageExample"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
-                android:src="@drawable/math_123" />
+                android:src="@drawable/baseline_home_24" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -40,12 +40,12 @@
                 android:layout_gravity="end">
 
                 <TextView
-                    android:id="@+id/textMath482"
+                    android:id="@+id/textExampleGroup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="0dp"
-                    android:text="Math 482" />
+                    android:text="Example Group" />
 
                 <TextView
                     android:id="@+id/textProfessor"
@@ -66,6 +66,7 @@
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -101,6 +102,7 @@
                     android:text="User 1"
                     android:textColor="@color/white" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -121,6 +123,7 @@
                     android:text="User 2"
                     android:textColor="@color/white" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -141,6 +144,7 @@
                     android:text="User 3"
                     android:textColor="@color/white" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -161,6 +165,7 @@
                     android:text="User 4"
                     android:textColor="@color/white" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -183,6 +188,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
     </HorizontalScrollView>
 
     <ImageButton
