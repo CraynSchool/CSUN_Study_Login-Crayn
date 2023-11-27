@@ -27,10 +27,10 @@
                 android:orientation="horizontal" >
 
                 <TextView
-                    android:id="@+id/textClass"
+                    android:id="@+id/textMath482"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Class"
+                    android:text="Math 482"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     />
@@ -40,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:text="00:00 - 00:00"
+                    android:text="11:00 AM - 12:15 PM"
                     android:layout_marginStart="10dp"
                     android:textSize="20dp"/>
 
@@ -85,21 +85,21 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButtonMeeting1"
+                android:id="@+id/imageButtonMathMeeting1"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_groups_24" />
 
             <ImageButton
-                android:id="@+id/imageButtonMeeting2"
+                android:id="@+id/imageButtonMathMeeting2"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_groups_24" />
 
             <ImageButton
-                android:id="@+id/imageButtonMeeting3"
+                android:id="@+id/imageButtonMathMeeting3"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"

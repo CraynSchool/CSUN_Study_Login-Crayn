@@ -13,12 +13,12 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 
-public class HistoryGroupFragment extends Fragment {
+public class CompGroupFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_history_group,container,false);
+        View view=inflater.inflate(R.layout.fragment_comp_group,container,false);
 
         ImageButton user1FragmentButton = view.findViewById(R.id.userButton1);
         ImageButton user2FragmentButton = view.findViewById(R.id.userButton2);
@@ -75,7 +75,6 @@ public class HistoryGroupFragment extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, new MessageFragment());
-                //transaction.addToBackStack(null); // Optional, for back navigation
                 transaction.commit();
             }
         });
@@ -84,8 +83,7 @@ public class HistoryGroupFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, new HistoryMeetingsFragment());
-                //transaction.addToBackStack(null); // Optional, for back navigation
+                transaction.replace(R.id.fragment_container, new CompMeetingsFragment());
                 transaction.commit();
             }
         });

@@ -78,13 +78,11 @@ public class MathGroupFragment extends Fragment {
                 transaction.commit();
             }
         });
-
         meetingFragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, new MeetingFragment());
-                //transaction.addToBackStack(null); // Optional, for back navigation
+                transaction.replace(R.id.fragment_container, new MathMeetingsFragment());
                 transaction.commit();
             }
         });

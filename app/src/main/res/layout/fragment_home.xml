@@ -54,6 +54,27 @@
                 android:layout_gravity="center">
 
                 <ImageButton
+                    android:id="@+id/compButton"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/baseline_computer_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Comp 490"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageButton
                     android:id="@+id/historyButton"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
@@ -65,28 +86,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="History 380"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-
-                <ImageButton
-                    android:id="@+id/imageButton3"
-                    android:layout_width="150dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/baseline_home_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Example"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -208,35 +207,35 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/imageButtonMeeting1"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_groups_24" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/imageButtonMeeting2"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_groups_24" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/imageButtonMeeting3"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_groups_24" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/imageButtonMeeting4"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_groups_24" />
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/imageButtonMeeting5"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_weight="1"

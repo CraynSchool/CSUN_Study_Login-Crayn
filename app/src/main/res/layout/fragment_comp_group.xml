@@ -26,12 +26,12 @@
             android:padding="28dp">
 
             <ImageView
-                android:id="@+id/imageMath123"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:id="@+id/imageComputer"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
-                android:src="@drawable/math_123" />
+                android:src="@drawable/baseline_computer_24" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -40,12 +40,12 @@
                 android:layout_gravity="end">
 
                 <TextView
-                    android:id="@+id/textMath482"
+                    android:id="@+id/textComp490"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="0dp"
-                    android:text="Math 482" />
+                    android:text="Comp 490" />
 
                 <TextView
                     android:id="@+id/textProfessor"
@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
-                    android:text="11:00 AM - 12:15 PM" />
+                    android:text="10:00 AM - 12:15 PM" />
 
             </LinearLayout>
         </LinearLayout>
